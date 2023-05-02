@@ -1,0 +1,41 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .item {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.badge {
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.completed {
+  background-color: #4caf50;
+}
+
+.nCompleted {
+  background-color: hsl(5, 39%, 49%);
+}
